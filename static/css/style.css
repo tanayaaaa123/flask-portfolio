@@ -109,12 +109,100 @@ nav ul li a.active {
     background-color: #1a1a1a;
     color: #eaeaea;
 }
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .about-container h2 {
     font-size: 2.5rem;
     color: #a259ff;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .about-container p {
     font-size: 1.2rem;
     line-height: 1.8;
+    text-align: center;
+}
+/* Experience Section */
+/* Experience Section */
+#experience {
+    padding: 4rem 6rem;
+    background-color: #1a1a1a;
+    color: #eaeaea;
+}
+
+#experience h2 {
+    font-size: 2.5rem;
+    color: #a259ff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.experience-card {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(162, 89, 255, 0.2);
+    transition: transform 0.3s ease;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.experience-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d0c2ff;
+}
+
+.exp-section {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.exp-section h4 {
+    font-size: 1.2rem;
+    color: #a259ff;
+    margin-bottom: 0.5rem;
+}
+
+.exp-section p {
+    font-size: 1.05rem;
+    color: #e0d8ff;
+    margin-bottom: 0.5rem;
+}
+.collapsible {
+    cursor: pointer;
+    background-color: #3a3a3a;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    color: #a259ff;
+}
+
+.collapsible:hover {
+    background-color: #5a5a5a;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-left: 1rem;
+}
+
+.collapsible.active + .collapsible-content {
+    max-height: 200px; /* Adjust as needed */
+    padding-top: 0.5rem;
 }

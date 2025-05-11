@@ -6,6 +6,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- AOS(Animate on scroll) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -31,25 +34,56 @@
             <img src="{{ url_for('static', filename='css/images/formal.jpg') }}" alt="Profile Picture">
         </div>
     </section>
-    <section id="about-me" class="about-section">
-        <div class="container about-container">
-          <h2>About Me</h2>
-          <p>
-            I'm a recent MCA graduate with a passion for uncovering insights through data.
-            Skilled in data visualization, Python, SQL, and dashboard creation. Actively looking for
-            opportunities as a Data Analyst to apply my knowledge in real-world projects.
-            I have done my Matsers from Vellore Institue of technology, Vellore. I completed my Bachelor's in Computer Science from Pune in 2023.
-            Experienced in working with telecom domain technologies, like
-            Passive Optical Networks (PON) and broadband networks. Proven ability to automate
-            workflows, analyze complex datasets, and generate actionable insights to support decisionmaking.
-          </p>
-        </div>
+    <section id="about-me" class="about-section" data-aos="fade-up">
+        
+            <div class="container about-container">
+                <h2>About Me</h2>
+                <p>
+                I'm a recent MCA graduate with a passion for uncovering insights through data.
+                Skilled in data visualization, Python, SQL, and dashboard creation. Actively looking for
+                opportunities as a Data Analyst to apply my knowledge in real-world projects.
+                I have done my Matsers from Vellore Institue of technology, Vellore. I completed my Bachelor's in Computer Science from Pune in 2023.
+                Experienced in working with telecom domain technologies, like
+                Passive Optical Networks (PON) and broadband networks. Proven ability to automate
+                workflows, analyze complex datasets, and generate actionable insights to support decisionmaking.
+                </p>
+            </div>
+       
     </section>
+    <section id="experience">
+        <h2 data-aos="fade-down">Experience</h2>
+        <div class="experience-card" data-aos="fade-up">
+          <h3>Nokia - Intern</h3>
+          <p><strong>Location:</strong> Chennai | <strong>Aug 2024 – May 2025</strong></p>
       
+          <div class="exp-section">
+            <h4>🔧 Role & Contributions</h4>
+            <p>Designed and implemented <b>Python automation scripts</b> to streamline complex test workflows for PON technology and broadband networks, leading to faster and more reliable test execution.</p>
+            <p><b>Visualized test execution metrics</b> using Excel and Power BI for improved internal reporting and decision-making.</p>
+            <p>Collaborated with QA engineers to identify inefficiencies in test cases and optimized automation logic for better maintainability.</p>
+          </div>
+      
+          <div class="exp-section">
+            <h4 class="collapsible">🛠️ Technologies & Tools</h4>
+            <div class="collapsible-content">
+                <p><em>Python, PON, Broadband Networks, Linux (CLI), Power BI, Excel, Jenkins, Ansible Playbook</em></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+          
     
     
     <script src="{{ url_for('static', filename='js/script.js') }}">
 
     </script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html> 
