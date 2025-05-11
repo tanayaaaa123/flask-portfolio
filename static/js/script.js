@@ -52,5 +52,31 @@ document.querySelectorAll('.collapsible').forEach(button => {
   });
 });
 
+document.querySelectorAll(".tech-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+      const techList = button.nextElementSibling;
+      techList.style.display = techList.style.display === "block" ? "none" : "block";
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    };
+
+    scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
 
   

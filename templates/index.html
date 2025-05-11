@@ -8,6 +8,7 @@
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <!-- AOS(Animate on scroll) CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -20,6 +21,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="your_google_drive_link" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -71,6 +73,81 @@
           </div>
         </div>
       </section>
+      <section id="projects" class="projects-section">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="projects-container">
+      
+          <!-- Project 1 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>E-Housing Society Management System (2022)</h3>
+            <p>
+              Developed a web platform for society admin tasks – complaint resolution, parking management, and resident communication.
+              Included an NLP-based system that categorizes issues and automates guest parking bookings.
+            </p>
+            <button class="tech-toggle">View Tools & Tech</button>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>NLP</li>
+              <li>HTML/CSS/JS</li>
+              <li>Apache Tomcat</li>
+              <li>SQL</li>
+              <li>Bootstrap</li>
+            </ul>
+            <a href="https://github.com/yourusername/e-housing-system" target="_blank" class="tech-toggle">View on GitHub</a>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Fake News Detection using NLP (2024)</h3>
+            <p>
+              Built a deep learning model using mBERT + LSTM to classify real vs fake news, leveraging advanced NLP preprocessing techniques for cleaner input data.
+            </p>
+            <button class="tech-toggle">View Tools & Tech</button>
+            <ul class="tech-list">
+              <li>Python</li>
+              <li>mBERT</li>
+              <li>LSTM</li>
+              <li>NLP</li>
+            </ul>
+            <a href="https://github.com/yourusername/fake-news-detection" target="_blank" class="tech-toggle">View on GitHub</a>
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>E-Commerce Analytics Dashboard (2025)</h3>
+            <p>
+              Designed a Power BI dashboard to monitor sales, customer behavior, and KPIs like AOV and conversion rates using SQL + DAX.
+            </p>
+            <button class="tech-toggle">View Tools & Tech</button>
+            <ul class="tech-list">
+              <li>Power BI</li>
+              <li>DAX</li>
+              <li>SQL</li>
+              <li>Excel</li>
+            </ul>
+            <a href="https://github.com/yourusername/e-commerce-dashboard" target="_blank" class="tech-toggle">View on GitHub</a>
+          </div>
+      
+        </div>
+      </section>
+      
+      <section id="contact" class="contact-section">
+        <h2 data-aos="fade-up">Get in Touch</h2>
+        <p class="contact-text" data-aos="fade-up" data-aos-delay="100">
+          Have a question or want to work together? Reach out!
+        </p>
+      
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:tanayaranade1301@gmail.com">tanayaranade1301@gmail.com</a></p>
+            <p><strong>Contact: +917774024446</strong></p>
+            <p><strong>Location:</strong> Pune, India</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tanayaranade1301/" target="_blank">https://www.linkedin.com/in/tanayaranade1301/</a></p>
+          </div>
+      
+          <a href="mailto:tanayaranade1301@gmail.com" class="email-button">Send Me a Message</a>
+        </div>
+      </section>
       
     
           
@@ -84,6 +161,19 @@
     <script>
         AOS.init();
     </script>
+    
+    <!-- Floating Social Bar -->
+    <div class="social-bar">
+        <a href="https://www.linkedin.com/in/tanayaranade1301/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/tanayaaaa123" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:tanayaranade1301@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+    <footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Tanaya Ranade. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html> 
